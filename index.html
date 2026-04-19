@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orden del Dragón Ancestral | Official Site</title>
+    <style>
+        :root {
+            --bg-dark: #0d1117;
+            --bg-card: #161b22;
+            --blue-primary: #3fa2f7;
+            --blue-dark: #022b4d;
+            --text-main: #e5e7eb;
+            --border-color: #30363d;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(2, 43, 77, 0.9), rgba(13, 17, 23, 1)), url('ODA_Roster_2025.jpg') center/cover;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--blue-primary);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: var(--blue-primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .bio-section {
+            background: var(--bg-card);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 5px solid var(--blue-primary);
+            margin-bottom: 40px;
+        }
+
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th {
+            background-color: var(--blue-dark);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        tr:hover {
+            background-color: #1f2937;
+        }
+
+        .role-icon { width: 20px; vertical-align: middle; margin-right: 5px; }
+        .flag { width: 20px; vertical-align: middle; margin-right: 8px; }
+
+        .trivia-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .trivia-item {
+            background: var(--bg-card);
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid var(--border-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="ODA.png" alt="Logo ODA" style="width: 120px; margin-bottom: 10px;">
+    <h1>Orden del Dragón Ancestral</h1>
+    <p>Professional Amateur Esports Organization | LATAM</p>
+</header>
+
+<div class="container">
+    
+    <section class="bio-section">
+        <h2>Biography</h2>
+        <p><strong>Orden del Dragón Ancestral (ODA)</strong> es una organización peruana de Esports fundada en octubre de 2025 por <strong>Gael Medina</strong>. El equipo nació con la misión de profesionalizar el talento regional de League of Legends mediante análisis riguroso y disciplina competitiva.</p>
+        <p>En 2026, tras una reestructuración técnica y el paso de coaches como Warfare y Fer, ODA se ha consolidado como un contendiente serio en la Blossom League, utilizando análisis de datos avanzado para optimizar su rendimiento.</p>
+    </section>
+
+    <h2>Active Roster</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Full Name</th>
+                    <th>Role</th>
+                    <th>Join Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>MrArtu</strong></td>
+                    <td>Rodolfo Arturo</td>
+                    <td>Top</td>
+                    <td>2025-10-01</td>
+                </tr>
+                <tr>
+                    <td><strong>Mifulafu</strong></td>
+                    <td>Ana Karina</td>
+                    <td>Jungle</td>
+                    <td>2025-10-01</td>
+                </tr>
+                <tr>
+                    <td><strong>Revelex</strong></td>
+                    <td>Alexis Calixto</td>
+                    <td>Mid</td>
+                    <td>2026-01-01</td>
+                </tr>
+                <tr>
+                    <td><strong>Palomares</strong></td>
+                    <td>Gael Medina</td>
+                    <td>Bot</td>
+                    <td>2025-10-01</td>
+                </tr>
+                <tr>
+                    <td><strong>Manzanita</strong></td>
+                    <td>Benjamin Ramirez</td>
+                    <td>Support</td>
+                    <td>2025-10-01</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>Trivia</h2>
+    <div class="trivia-list">
+        <div class="trivia-item">🧬 VOD reviews con precisión científica (tipo bioquímica).</div>
+        <div class="trivia-item">🎧 Playlist oficial: Mac Miller, Rusowsky y Kali Uchis.</div>
+        <div class="trivia-item">✍️ El jungla titular escribe historias en Wattpad en sus ratos libres.</div>
+        <div class="trivia-item">💋 Decisiones estratégicas mediante sesiones de integración grupal.</div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 Orden del Dragón Ancestral. All rights reserved. <br>
+    Desarrollado para el crecimiento del talento LATAM.
+</footer>
+
+</body>
+</html>
