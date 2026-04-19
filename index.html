@@ -3,126 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orden del Dragón Ancestral | Official Site</title>
+    <title>Orden del Dragón Ancestral - League of Legends Esports Wiki</title>
     <style>
-        :root {
-            --bg-dark: #0d1117;
-            --bg-card: #161b22;
-            --blue-primary: #3fa2f7;
-            --blue-dark: #022b4d;
-            --text-main: #e5e7eb;
-            --border-color: #30363d;
-        }
-
+        /* CSS RESET & FANDOM COLORS */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-dark);
-            color: var(--text-main);
+            background-color: #121212;
+            color: #e6e6e6;
+            font-family: Helvetica, Arial, sans-serif;
             margin: 0;
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(rgba(2, 43, 77, 0.9), rgba(13, 17, 23, 1)), url('ODA_Roster_2025.jpg') center/cover;
-            padding: 60px 20px;
-            text-align: center;
-            border-bottom: 3px solid var(--blue-primary);
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
             padding: 20px;
+            font-size: 14px;
         }
 
-        h1, h2 {
-            color: var(--blue-primary);
-            text-transform: uppercase;
-            letter-spacing: 2px;
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 20px;
         }
 
-        .bio-section {
-            background: var(--bg-card);
-            padding: 25px;
-            border-radius: 8px;
-            border-left: 5px solid var(--blue-primary);
-            margin-bottom: 40px;
+        /* INFOBOX (El cuadro de la derecha) */
+        .infobox {
+            width: 300px;
+            background-color: #1a1a1a;
+            border: 1px solid #3a3a3a;
+            border-top: 5px solid #007bff;
+            float: right;
+            padding: 0;
+            margin-bottom: 20px;
         }
 
-        .table-container {
-            width: 100%;
-            overflow-x: auto;
-            margin-bottom: 30px;
+        .infobox-header {
+            background-color: #252525;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            border-bottom: 1px solid #3a3a3a;
         }
 
-        table {
+        .infobox-image {
+            text-align: center;
+            padding: 15px;
+            background: #000;
+        }
+
+        .infobox-image img { width: 150px; }
+
+        .infobox-content table {
             width: 100%;
             border-collapse: collapse;
-            background: var(--bg-card);
-            border-radius: 8px;
-            overflow: hidden;
         }
 
-        th {
-            background-color: var(--blue-dark);
-            color: white;
-            padding: 15px;
+        .infobox-content td {
+            padding: 6px 10px;
+            border-bottom: 1px dotted #333;
+            font-size: 12px;
+        }
+
+        .label { font-weight: bold; width: 40%; color: #aaa; }
+
+        /* CONTENT AREA */
+        .wiki-content { flex: 1; }
+
+        h1 { border-bottom: 1px solid #3a3a3a; padding-bottom: 5px; font-size: 28px; }
+        h2 { border-bottom: 1px solid #3a3a3a; padding-bottom: 3px; margin-top: 30px; font-size: 22px; color: #fff; }
+
+        /* WIKITABLES */
+        .wikitable {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #1a1a1a;
+            margin: 10px 0;
+            border: 1px solid #3a3a3a;
+        }
+
+        .wikitable th {
+            background-color: #252525;
+            color: #fff;
+            padding: 8px;
+            border: 1px solid #3a3a3a;
             text-align: center;
         }
 
-        td {
-            padding: 12px;
-            border-bottom: 1px solid var(--border-color);
+        .wikitable td {
+            padding: 8px;
+            border: 1px solid #3a3a3a;
             text-align: center;
         }
 
-        tr:hover {
-            background-color: #1f2937;
+        .wikitable tr:hover { background-color: #222; }
+
+        /* TABS (Timeline) */
+        .tabs-header {
+            background: #252525;
+            display: inline-flex;
+            border: 1px solid #3a3a3a;
+            margin-bottom: 15px;
         }
 
-        .role-icon { width: 20px; vertical-align: middle; margin-right: 5px; }
-        .flag { width: 20px; vertical-align: middle; margin-right: 8px; }
-
-        .trivia-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 15px;
+        .tab {
+            padding: 8px 20px;
+            cursor: pointer;
+            border-right: 1px solid #3a3a3a;
         }
 
-        .trivia-item {
-            background: var(--bg-card);
-            padding: 15px;
-            border-radius: 5px;
-            border: 1px solid var(--border-color);
-        }
+        .tab.active { background: #007bff; font-weight: bold; }
 
-        footer {
-            text-align: center;
-            padding: 40px;
-            font-size: 0.9rem;
-            color: #8b949e;
-        }
+        /* ICONS */
+        .role-icon { width: 18px; vertical-align: middle; margin-right: 5px; }
+        .flag-icon { width: 18px; vertical-align: middle; margin-right: 5px; }
+
+        .trivia-list { padding-left: 20px; }
+        .trivia-list li { margin-bottom: 8px; }
+
     </style>
 </head>
 <body>
 
-<header>
-    <img src="ODA.png" alt="Logo ODA" style="width: 120px; margin-bottom: 10px;">
-    <h1>Orden del Dragón Ancestral</h1>
-    <p>Professional Amateur Esports Organization | LATAM</p>
-</header>
+<div class="main-container">
+    <div class="wiki-content">
+        <h1>Orden del Dragón Ancestral</h1>
+        
+        <aside class="infobox">
+            <div class="infobox-header">Orden del Dragón Ancestral</div>
+            <div class="infobox-image"><img src="ODA.png" alt="ODA Logo"></div>
+            <div class="infobox-content">
+                <table>
+                    <tr><td class="label">Name</td><td>Orden del Dragón Ancestral</td></tr>
+                    <tr><td class="label">Short Name</td><td>ODA</td></tr>
+                    <tr><td class="label">Location</td><td>Peru</td></tr>
+                    <tr><td class="label">Region</td><td>Latin America</td></tr>
+                    <tr><td class="label">Owner</td><td>Gael Medina</td></tr>
+                    <tr><td class="label">Created</td><td>2025-10-01</td></tr>
+                </table>
+            </div>
+        </aside>
 
-<div class="container">
-    
-    <section class="bio-section">
+        <p><b>Orden del Dragón Ancestral</b> (frecuentemente abreviado como <b>ODA</b>) es una organización peruana de deportes electrónicos de nivel amateur competitiva, enfocada primordialmente en el ecosistema de <i>League of Legends</i> en Latinoamérica. Fundada por Gael Medina, la organización se centra en profesionalizar el talento regional mediante metodologías de análisis rigurosas.</p>
+
         <h2>Biography</h2>
-        <p><strong>Orden del Dragón Ancestral (ODA)</strong> es una organización peruana de Esports fundada en octubre de 2025 por <strong>Gael Medina</strong>. El equipo nació con la misión de profesionalizar el talento regional de League of Legends mediante análisis riguroso y disciplina competitiva.</p>
-        <p>En 2026, tras una reestructuración técnica y el paso de coaches como Warfare y Fer, ODA se ha consolidado como un contendiente serio en la Blossom League, utilizando análisis de datos avanzado para optimizar su rendimiento.</p>
-    </section>
+        <p>En 2025, el equipo se consolidó con su roster original compitiendo en torneos online. Para la temporada 2026, tras una fase de reestructuración técnica, incorporaron a Warfare como coach y Alexis Calixto pasó a la titularidad del carril central.</p>
 
-    <h2>Active Roster</h2>
-    <div class="table-container">
-        <table>
+        <h2>Timeline</h2>
+        <div class="tabs-header">
+            <div class="tab active">2026</div>
+            <div class="tab">2025</div>
+        </div>
+        <ul class="trivia-list">
+            <li><b>January:</b> Alexis Calixto se unió como Substitute Mid. Fer se unió como Head Coach.</li>
+            <li><b>February:</b> Fer y Gonza dejaron el equipo.</li>
+            <li><b>March:</b> Efren Rodrigez dejó el equipo. Alexis Calixto pasó a ser titular. Warfare se unió como Head Coach.</li>
+        </ul>
+
+        <h2>Player Roster</h2>
+        <h3>Active</h3>
+        <table class="wikitable">
             <thead>
                 <tr>
                     <th>Player</th>
@@ -132,54 +168,39 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><strong>MrArtu</strong></td>
-                    <td>Rodolfo Arturo</td>
-                    <td>Top</td>
-                    <td>2025-10-01</td>
-                </tr>
-                <tr>
-                    <td><strong>Mifulafu</strong></td>
-                    <td>Ana Karina</td>
-                    <td>Jungle</td>
-                    <td>2025-10-01</td>
-                </tr>
-                <tr>
-                    <td><strong>Revelex</strong></td>
-                    <td>Alexis Calixto</td>
-                    <td>Mid</td>
-                    <td>2026-01-01</td>
-                </tr>
-                <tr>
-                    <td><strong>Palomares</strong></td>
-                    <td>Gael Medina</td>
-                    <td>Bot</td>
-                    <td>2025-10-01</td>
-                </tr>
-                <tr>
-                    <td><strong>Manzanita</strong></td>
-                    <td>Benjamin Ramirez</td>
-                    <td>Support</td>
-                    <td>2025-10-01</td>
-                </tr>
+                <tr><td>Rodolfo Arturo</td><td>MrArtu</td><td>Top</td><td>2025-10-01</td></tr>
+                <tr><td>Ana Karina</td><td>Mifulafu</td><td>Jungle</td><td>2025-10-01</td></tr>
+                <tr><td>Alexis Calixto</td><td>Revelex</td><td>Mid</td><td>2026-01-01</td></tr>
+                <tr><td>Gael Medina</td><td>Palomares</td><td>Bot</td><td>2025-10-01</td></tr>
+                <tr><td>Benjamin Ramirez</td><td>Manzanita</td><td>Support</td><td>2025-10-01</td></tr>
             </tbody>
         </table>
-    </div>
 
-    <h2>Trivia</h2>
-    <div class="trivia-list">
-        <div class="trivia-item">🧬 VOD reviews con precisión científica (tipo bioquímica).</div>
-        <div class="trivia-item">🎧 Playlist oficial: Mac Miller, Rusowsky y Kali Uchis.</div>
-        <div class="trivia-item">✍️ El jungla titular escribe historias en Wattpad en sus ratos libres.</div>
-        <div class="trivia-item">💋 Decisiones estratégicas mediante sesiones de integración grupal.</div>
-    </div>
+        <h3>Former</h3>
+        <table class="wikitable">
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Full Name</th>
+                    <th>Join Date</th>
+                    <th>Leave Date</th>
+                    <th>New Team</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Efren Rodrigez</td><td>Pitagoras</td><td>2025-10-01</td><td>2026-03</td><td>Free Agent</td></tr>
+                <tr><td>Gonza</td><td>Gonza</td><td>2025-10-01</td><td>2026-02</td><td>Free Agent</td></tr>
+            </tbody>
+        </table>
 
+        <h2>Trivia</h2>
+        <ul class="trivia-list">
+            <li>La estructura de entrenamiento se basa en precisión bioquímica.</li>
+            <li>El jungla titular escribe en Wattpad en sus ratos libres.</li>
+            <li>Las decisiones estratégicas se resuelven mediante sesiones de integración grupal.</li>
+        </ul>
+    </div>
 </div>
-
-<footer>
-    &copy; 2026 Orden del Dragón Ancestral. All rights reserved. <br>
-    Desarrollado para el crecimiento del talento LATAM.
-</footer>
 
 </body>
 </html>
